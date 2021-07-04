@@ -2,7 +2,7 @@
   <div class="container">
     <% @posts.each do |post|%>
         <div class="posts-index-item">
-            <%= link_to(post.content,show_path) %>
+            <%= link_to(post.content,show_path(post)) %>
         </div>
     <% end %>
   </div>
